@@ -1,18 +1,17 @@
 package main
 
 import (
-	"os"
 	"bufio"
 	"fmt"
+	"os"
 	"strings"
 )
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
-	
+
 	// strings are composed of runes
 	vowels := make(map[rune]int)
-
 
 	for scanner.Scan() {
 		text := scanner.Text()
@@ -31,5 +30,5 @@ func main() {
 	for k, v := range vowels {
 		fmt.Printf("vowel %c appears %d times\n", k, v)
 	}
-	
+
 }
