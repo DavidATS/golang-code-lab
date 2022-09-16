@@ -12,3 +12,6 @@ func main() {
 	text, _ := reader.ReadString('\n')
 	fmt.Println("Hello ", text)
 }
+
+/*
+*/
